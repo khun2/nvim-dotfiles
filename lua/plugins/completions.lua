@@ -18,7 +18,6 @@ return {
         snippet = {
           -- REQUIRED - you must specify a snippet engine
           expand = function(args)
-            -- TODO
             vim.fn['vsnip#anonymous'](args.body) -- For `vsnip` users.
             -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
             -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
@@ -45,7 +44,7 @@ return {
           { name = 'nvim_lsp_signature_help' }, -- display function signatures with current parameter emphasized
           { name = 'nvim_lua', keyword_length = 2 }, -- complete neovim's Lua runtime API such vim.lsp.*
           { name = 'vsnip', keyword_length = 2 }, -- nvim-cmp source for vim-vsnip
-          { name = 'calc' }, -- source for math calculation
+          { name = 'buffer' },
           -- { name = 'luasnip' }, -- For luasnip users.
           -- { name = 'ultisnips' }, -- For ultisnips users.
           -- { name = 'snippy' }, -- For snippy users.
