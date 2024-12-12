@@ -1,5 +1,5 @@
 require 'config.lazy'
-require 'lua.lsp_diagnostics_options_setup'
+--require 'lua.lsp_diagnostics_options_setup'
 
 --Set completeopt to have a better completion experience
 -- :help completeopt
